@@ -5,8 +5,8 @@ import face_recognition
 formData = cgi.FieldStorage()
 face_match = 0
 
-image=formData.getvalue("current_image")
-email=formData.getvalue("email")
+image = formData.getvalue("current_image")
+email = formData.getvalue("email")
 data_uri = image
 header, encoded = data_uri.split(",", 1)
 data = b64decode(encoded)
